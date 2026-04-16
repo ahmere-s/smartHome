@@ -12,4 +12,5 @@
 - (1, Passive piezo buzzer)
 - (1, Gas/hazardous odor sensor)
 
-
+## References
+[KeyeStudio Docs]: https://docs.keyestudio.com/projects/KS0085/en/latest/
