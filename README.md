@@ -36,10 +36,10 @@
 ![Image 6](images/image6.jpg) - You can now see I have taken the sensor shield and connected it to my arduino R3 with power coming in through the USB-B cord. At this point in the project I am now able to see a connection from the control board to my computer and IDE along with a connection from the control board going into the sensor shield and then to each component. 
 
 
-![Image 7](images/image7.jpg) - Here we have image 7
+![Image 7](images/image7.jpg) - explanation coming soon...
 
 
-![Image 8](images/image8.jpg) - Here we have image 8
+![Image 8](images/image8.jpg) - explanation coming soon...
 
 
 ![Image 9](images/image9.jpg) - Here I used a small screwdriver to adjust the potentiometer for a better contrast.
