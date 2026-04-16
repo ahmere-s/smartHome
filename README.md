@@ -13,4 +13,6 @@
 - (1, Gas/hazardous odor sensor)
 
 ## References
-[KeyeStudio Docs]: https://docs.keyestudio.com/projects/KS0085/en/latest/
+- https://docs.keyestudio.com/projects/KS0085/en/latest/
+- Official Arduino Book
+- Previous Arduino Projects
