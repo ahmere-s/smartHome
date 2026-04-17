@@ -1,4 +1,5 @@
-# Smart Home using KeyeStudio components and Arduino R3 Board
+# Smart Home System using KeyeStudio components and Arduino R3 Board
+- A low-cost embedded project demonstrating sensor integration, automation logic, and microcontroller based decision making.
 
 ## Components
 - (Qty, Type)
@@ -18,28 +19,28 @@
 - Previous Arduino Projects
 
 ## In the process
-![Image 1](images/image1.jpg) - In this first image, I began assembling the mini frame and attaching components.
+![Image 1](images/image1.jpg) - Assembled the mini smart home frame and mounted sensors and module into position. 
 
 
-![Image 2](images/image2.jpg) - Next, we have the mini smart home fully assembled with the components attached.
+![Image 2](images/image2.jpg) - After attaching, I made sure all components were aligned properly for accurate sensing.
 
 
-![Image 3](images/image3.jpg) - In this third image, I began connecting one end of each wire onto the pins of each sensor while neatly running the opposite end of the wires towards the microcontroller.
+![Image 3](images/image3.jpg) - Here I ensured wiring and pin mapping accuracy, neatly running wires to correct pins and checking for stable connections.
 
 
-![Image 4](images/image4.jpg) - Here I made sure the wires were ran neatly as well as connected to the correct pins. E.g. Digital, Analog, PWM, I2C etc. 
+![Image 4](images/image4.jpg) - A picture of wires ran neatly as well as connected to the correct pins. E.g. Digital, Analog, PWM, I2C etc. 
 
 
-![Image 5](images/image5.jpg) - After getting everything wired, I proceeded to install necessary software and begin testing. Instantly, I found myself debugging. Due to previous projects with Arduino IDE, I noticed right away that my computer was not picking up a USB connection from the microcontroller. The original microcontroller being used in the photos is a KeyeStudio PLUS control board with a Keyestudio sensor shield v5.2 on top and USB-C for the port. After trying manual driver installation, a few other possible solutions and remembering that my deadline was approaching, I decided to move forward with what I knew. I knew that if I could get the Keyestudio sensor shield to connect to my arduino R3 board, then I would have a garunteed connection from my arduino R3 to my computer and Arduino IDE. So, I did just that and was able to get to the next step.     
+![Image 5](images/image5.jpg) - Ran into issues with the Keyestudio control board(not sensor shield), decided to swap out for an official Arduino.   
 
 
-![Image 6](images/image6.jpg) - You can now see I have taken the sensor shield and connected it to my arduino R3 with power coming in through the USB-B cord. At this point in the project I am now able to see a connection from the control board to my computer and IDE along with a connection from the control board going into the sensor shield and then to each component. 
+![Image 6](images/image6.jpg) - Confirmed all components are now powered, responsive and ready for firmware development.
 
 
-![Image 7](images/image7.jpg) - explanation coming soon...
+![Image 7](images/image7.jpg) - Ran into more debugging, decided to rewire entire system and learned a few new things in the process.
 
 
-![Image 8](images/image8.jpg) - explanation coming soon...
+![Image 8](images/image8.jpg) - Confirmed I am now able to control components inside of my program.
 
 
-![Image 9](images/image9.jpg) - Here I used a small screwdriver to adjust the potentiometer for a better contrast.
+![Image 9](images/image9.jpg) - Here I adjusted the potentiometer for proper signal calibration(better contrast).
