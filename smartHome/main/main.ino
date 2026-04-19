@@ -16,7 +16,7 @@ const int yellowLED = 12;
 const int whiteLED = 13;
 const int buttonSwitch1 = 4;
 const int buttonSwitch2 = 5;
-const int relayModule = 12;
+const int relayModule = 7;
 const int sensorMotion = 2; 
 
 void setup() {
@@ -24,7 +24,7 @@ void setup() {
   lcd.init();
   lcd.backlight();
   lcd.setCursor(0, 0);
-  lcd.print("Working...");
+  lcd.print("Welcome, Guest!");
 
   pinMode(sensorMotion, INPUT);
   pinMode(buttonSwitch1, INPUT_PULLUP);
