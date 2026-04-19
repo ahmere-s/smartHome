@@ -43,4 +43,4 @@
 ![Image 8](images/image8.jpg) - Confirmed I am now able to control components inside of my program.
 
 
-![Image 9](images/image9.jpg) - Here I adjusted the potentiometer for proper signal calibration(better contrast).
+![Image 9](images/image10.jpg) - Here I adjusted the potentiometer for proper signal calibration(better contrast).
