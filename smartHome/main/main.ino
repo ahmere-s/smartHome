@@ -4,8 +4,8 @@
 
 LiquidCrystal_I2C lcd(0x27, 16, 2); //Location, columns, rows
 
-Servo servo1Door; //Pin 9
-Servo servo2Window; //Pin 10
+Servo servo1Door; //Pin 10
+Servo servo2Window; //Pin 9
 
 //Analog
 const int sensorGas = A0;
@@ -17,7 +17,9 @@ const int whiteLED = 13;
 const int buttonSwitch1 = 4;
 const int buttonSwitch2 = 5;
 const int relayModule = 7;
-const int sensorMotion = 2; 
+const int sensorMotion = 2;
+bool isWindowOpen = false;
+bool isDoorOpen = false;
 
 void setup() {
   Serial.begin(9600);
@@ -25,9 +27,9 @@ void setup() {
   lcd.backlight();
   lcd.setCursor(1, 0);
   lcd.print("Welcome, Guest!");
-  lcd.setCursor(2, 1);      //setCursor() takes (column, row) NOT vice versa.
-  lcd.print("System Ready.");
-  delay(4000);
+  lcd.setCursor(1, 1);      //setCursor() takes (column, row) NOT vice versa.
+  lcd.print("System Prep...");
+  delay(5000);
   lcd.clear();
 
   pinMode(sensorMotion, INPUT);
@@ -39,8 +41,11 @@ void setup() {
   pinMode(relayModule, OUTPUT);
   pinMode(sensorBuzzer, OUTPUT);
 
-  servo1Door.attach(9);
-  servo2Window.attach(10);
+  servo1Door.attach(10);
+  delay(1000);             
+  servo2Window.attach(9);            
+
+  servo2Window.write(0);
 }
 
 void loop(){
@@ -57,14 +62,27 @@ void loop(){
   lcd.print(gasValue);
   delay(1000);
 
-  if (gasValue > 400){
-    
+  if (gasValue >= 350){
+    tone(sensorBuzzer, 1000);   //pin, frequency, duration(removed)
+    if (!isWindowOpen){servo2Window.write(90); isWindowOpen = true;}
   }
   else {
-    
+    noTone(sensorBuzzer);
+    if (isWindowOpen){servo2Window.write(0); isWindowOpen = false;}  //Only move if window is already open.
   }
 
-  //if (motionSense == HIGH){} else {}
+  if (motionSense == HIGH){
+    digitalWrite(whiteLED, LOW);
+    digitalWrite(yellowLED, HIGH);
+
+    tone(sensorBuzzer, 500);
+  }
+  else {
+    digitalWrite(yellowLED, LOW);
+    digitalWrite(whiteLED, HIGH);
+
+    if(gasValue < 350){noTone(sensorBuzzer);}
+  }
   
 
 
