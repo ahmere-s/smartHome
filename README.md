@@ -1,22 +1,17 @@
-# Smart Home System using KeyeStudio components and Arduino R3 Board
-- A low-cost embedded project demonstrating sensor integration, automation logic, and microcontroller based decision making.
+# Smart Home System - Keyestudio + Arduino R3
 
-## Components
-- (Qty, Type)
+A low cost embedded systems project demonstrating sensor integration, automation logic, and microcontroller based decision making. Built with Keyestudio components on an Arduino R3 board.
 
-- (2, Actuators)
-- (1, I2C LCD)
-- (2, Button Switches)
-- (2, LEDs yellow && white)
-- (1, Relay Module)
-- (1, Motion detection sensor)
-- (1, Passive piezo buzzer)
-- (1, Gas/hazardous odor sensor)
+This was my first project with Frostburg's Laboratory for Artificial Intelligence and Robotics, and was presented at the Spring 2026 research symposium.
 
-## References
-- https://docs.keyestudio.com/projects/KS0085/en/latest/
-- Official Arduino Book
-- Previous Arduino Projects
+![Poster](images/URS_poster.pdf)
 
-## Research Symposium Poster
-![Image 1](images/URS_poster.pdf)
+## Overview
+The system automates home functions (lighting, access, and safety alerts) using sensor input and actuators, with a two-button interface and an I2C LCD for status display.
+
+## What I learned
+- Debugging power-related brownouts on the microcontroller
+- Integrating a motion-triggered alarm into the existing control loop
+- Tuning delay timing to avoid sensor/actuator race conditions 
+- Reading component datasheets to correctly wire and configure hardware
+- Referencing library documentation to use functions as intended rather than guessing behavior   
